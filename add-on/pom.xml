@@ -6,7 +6,7 @@
 	<groupId>io.github.flozano.org.vaadin.crudui</groupId>
 	<artifactId>crudui</artifactId>
 	<packaging>jar</packaging>
-	<version>7.0.1-SNAPSHOT</version>
+	<version>7.0.0.1</version>
 	<name>Crud UI Add-on</name>
 
 	<properties>
