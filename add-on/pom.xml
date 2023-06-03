@@ -3,7 +3,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
 	<groupId>io.github.flozano.org.vaadin.crudui</groupId>
 	<artifactId>crudui</artifactId>
 	<packaging>jar</packaging>
@@ -31,20 +35,20 @@
 	</licenses>
 
 	<organization>
-		<name>Alejandro Duarte</name>
-		<url>https://github.com/alejandro-du</url>
+		<name>Francisco A. Lozano</name>
+		<url>https://github.com/flozano</url>
 	</organization>
 
 	<scm>
-		<url>https://github.com/alejandro-du/crudui.git</url>
-		<connection>scm:git:https://github.com/alejandro-du/crudui.git</connection>
-		<developerConnection>scm:git:https://github.com/alejandro-du/crudui.git</developerConnection>
+		<url>https://github.com/flozano/vaadin-crudui.git</url>
+		<connection>scm:git:https://github.com/flozano/vaadin-crudui.git</connection>
+		<developerConnection>scm:git:https://github.com/flozano/vaadin-crudui.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/alejandro-du/crudui/issues</url>
+		<url>https://github.com/flozano/vaadin-crudui/issues</url>
 	</issueManagement>
 
 	<repositories>
@@ -190,5 +194,10 @@
 			</build>
 		</profile>
 	</profiles>
-
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
